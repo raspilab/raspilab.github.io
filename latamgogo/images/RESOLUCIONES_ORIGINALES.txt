@@ -1,0 +1,5 @@
+img_1.jpg - imag_6.jpg 800 X 600
+img_bg_1.jgp 1500x728
+img_bg_2.jpg 1500x567
+img_bg_3.jpg 1500x728
+iphone.png   540x1012

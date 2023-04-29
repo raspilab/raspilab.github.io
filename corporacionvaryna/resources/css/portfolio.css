@@ -1,0 +1,115 @@
+@media(min-width:200px){
+	.grid-item {
+		float: left;
+		  width: 50%;
+		  *height: 100%;
+		  background: #0D8;
+		  border: 2px solid #333;
+		  border-color: hsla(0, 0%, 0%, 0.7);
+		}
+}
+@media(min-width:400px){
+	.grid-item {
+		float: left;
+		  width: 33.33333%;
+		  *height: 100%;
+		  background: #0D8;
+		  border: 2px solid #333;
+		  border-color: hsla(0, 0%, 0%, 0.7);
+		}
+}
+@media(min-width:600px){
+	.grid-item {
+		float: left;
+		  width: 25%;
+		  *height: 100%;
+		  background: #0D8;
+		  border: 2px solid #333;
+		  border-color: hsla(0, 0%, 0%, 0.7);
+		}
+}
+@media (min-width: 700px) {
+  .dr-breakout-btn {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .outline {
+    display: none;
+  }
+  button.green-white:focus, button.green-white:hover{ 
+	color:#000;
+	background-color:rgba(17,236,0);
+	border-color:rgba(17,236,0);
+  }
+}
+
+.dr-breakout-btn {
+    width:150px;
+  }
+  
+/* ---- button ---- */
+button.outline {
+    position: relative;
+    z-index: 3;
+    background: transparent;
+    color: #1172c4;
+    font-size: 14px;
+    border-color: #1172c4;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 12px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    cursor: pointer;
+	outline: none;
+	width: 150px;
+	margin-bottom: 8px;
+}
+
+button.green-white {
+    font-weight: 700;
+    color: #11ec00;
+	border-color:#11ec00;
+	background: transparent;
+}
+button.is-checked, button.green-white:hover {
+    color: black;
+    background: #11ec00;
+    border-color: #11ec00;
+}
+.button-group {
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+  text-align:center;
+}
+/* ---- grid ---- */
+
+.grid {
+  *background: #DDD;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+
+
+.marketing { background: #D00; }
+.design { background: #19F; }
+.web { background: #008f39; }
+.video { background: #FFFF00; }

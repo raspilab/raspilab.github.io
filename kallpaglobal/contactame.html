@@ -1,0 +1,35 @@
+
+<?php
+if(isset($_POST['email'])) {
+
+// Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
+//$email_to = "kallpaglobal.comercial@gmail.com";
+$email_to = "kallpaglobal.comercial@gmail.com";
+$email_subject = "CONTACTO Kallpa Global";
+
+// Aquí se deberían validar los datos ingresados por el usuario
+if(!isset($_POST['email']) || !isset($_POST['nombre']) || !isset($_POST['celular']) || !isset($_POST['asunto']) || !isset($_POST['mensaje'])) {
+
+header ("Location: https://kallpaglobal.com/error-formulario.html");
+die();
+}
+
+$email_message = "Contacto Kallpa Global:\n\n";
+$email_message .= "Nombre: ".$_POST['nombre']."\n";
+$email_message .= "E-mail: ".$_POST['email']."\n";
+$email_message .= "Celular: ".$_POST['celular']."\n";
+$email_message .= "Asunto: ".$_POST['asunto']."\n";
+$email_message .= "Mensaje: ".$_POST['mensaje']."\n";
+
+// Ahora se envía el e-mail usando la función mail() de PHP
+$headers = 'From: '.$_POST['email']."\r\n".
+'Reply-To: '.$_POST['email']."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+
+if (mail($email_to, $email_subject, $email_message, $headers)) {
+header ("Location: https://kallpaglobal.com/formulario-enviado.html");
+} else {header ("Location: https://kallpaglobal.com/error-formulario.html");
+}
+}
+
+?>

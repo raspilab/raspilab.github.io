@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://estacionsolar.kallpaglobal.com/sitemap.xml
